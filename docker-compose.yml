@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+
+  main:
+    image: ychernenko/hdp-hw-client
+    build: ./main/context
+    entrypoint: bash
+
+  foo:
+    image: ychernenko/hdp-hw-client-foo
+    build:
+      context: ./foo
